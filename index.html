@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="/src/icon/favicon.png">
+
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/responsive.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-logo">
+            <a href="#home">Parthiv</a>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list">
+                <li>
+                    <a href="#home" class="navbar-link" onclick="onClickMenu()">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="navbar-link"onclick="onClickMenu()">About</a>
+                </li>
+                <li>
+                    <a href="#skill" class="navbar-link"onclick="onClickMenu()">Skill</a>
+                </li>
+                <li>
+                    <a href="#project" class="navbar-link"onclick="onClickMenu()">Project</a>
+                </li>
+                <li>
+                    <a href="#contact" class="navbar-link"onclick="onClickMenu()">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu" id="menu" onclick="onClickMenu()"><span class="material-symbols-outlined">menu</span></div>
+        <div class="close" id="close" onclick="onClickMenu()"><span class="material-symbols-outlined">close</span></div>
+    </header>
+    <main class="main">
+        <section class="home-section" id="home">
+            <div class="home-section-text">
+                <h1>Hi,I'am Parthiv</h1>
+                <h3 class="sub-heading">Frontend Developer,Backend Developer</h3>
+                <p class="para">knows how to design, code, test, correct and<br>document complex programs and program
+                    <br> modifications.
+                </p>
+                <a href="#contact"><button class="button">Contact me <img class="button-img"
+                            src="/src/icon/contact-mail.png" alt=""></button></a>
+            </div>
+            <img class="home-section-photo" src="/src/image/profile.png" alt="photo">
+            <div class="home-section-icon">
+                <a href="https://www.instagram.com/parthiv_sarker/"><img src="/src/icon/instagram.png" alt="instagram"></a>
+                <a href="https://github.com/Parthiv-Sarker"><img src="/src/icon/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="/src/icon/linkedin.png" alt="linkedin"></a>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="about-section-text">
+                <h1 class="heading">About Me</h1>
+                <h3 class="sub-heading">My Introduction</h3>
+            </div>
+            <div class="about-section-content">
+                <img src="/src/image/profile1.JPG" alt="photo">
+
+                <div class="about-section-content-grid">
+                    <p class="para">I'am a 2nd year B.Tech student of <br> Guru Nanak Institute of Technology <br>and a
+                        Full Stack
+                        Web
+                        Developer.</p>
+
+                    <div class="about-section-content-text">
+                        <div>
+                            <h1>1+</h1>
+                            <p class="para">Years <br>experience</p>
+                        </div>
+                        <div>
+                            <h1>1+</h1>
+                            <p class="para">Completed <br>project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skill-section" id="skill">
+            <div class="skill-section-text">
+                <h1 class="heading">Skills</h1>
+                <h3 class="sub-heading">My Technical Level</h3>
+            </div>
+            <div class="skill-content">
+                <div class="frontend">
+                    <div class="skill-section-content accordian1">
+                        <img class="fb-logo" src="/src/icon/bracket-curly.png" alt="">
+                        <div class="frontend-toggle">
+                            <div class="frontend-text">
+                                <h3 class="p-heading">Frontend developer</h3>
+                                <p class="sub-heading">More then 1 year</p>
+                            </div>
+                            <img class="fb-logo" onclick="onClickAccordian1()" src="/src/icon/downward-arrow.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="skill-section-content-data" id="accordian1">
+                        <div class="skill-title">
+                            <img src="/src/icon/html.png" alt="html-pic">
+                            <div class="skill-info">
+                                <div class="skill-info-text">
+                                    <h3>HTML</h3>
+                                    <p>90%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-html"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-title">
+                            <img src="/src/icon/css-3.png" alt="html-pic">
+                            <div class="skill-info">
+                                <div class="skill-info-text">
+                                    <h3>CSS</h3>
+                                    <p>65%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-css"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-title">
+                            <img src="/src/icon/js.png" alt="html-pic">
+                            <div class="skill-info">
+                                <div class="skill-info-text">
+                                    <h3>JAVA SCRIPT</h3>
+                                    <p>50%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-js"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-title">
+                            <img src="/src/icon/react.png" alt="html-pic">
+                            <div class="skill-info">
+                                <div class="skill-info-text">
+                                    <h3>REACT JS</h3>
+                                    <p>40%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-react"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="backend">
+                    <div class="skill-section-content accordian2" onclick="onClickAccordian2()">
+                        <img class="fb-logo" src="/src/icon/database.png" alt="">
+                        <div class="frontend-toggle">
+                            <div class="frontend-text">
+                                <h3 class="p-heading">Backend developer</h3>
+                                <p class="sub-heading">More then 1 year</p>
+                            </div>
+                            <img class="fb-logo" src="/src/icon/downward-arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="skill-section-content-data" id="accordian2">
+                        <div class="skill-title">
+                            <img src="/src/icon/node-js.png" alt="html-pic">
+                            <div class="skill-info">
+                                <div class="skill-info-text">
+                                    <h3>NODE JS</h3>
+                                    <p>50%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-node"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-title">
+                            <img src="/src/icon/server.png" alt="html-pic">
+                            <div class="skill-info">
+                                <div class="skill-info-text">
+                                    <h3>MONGODB</h3>
+                                    <p>55%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-mongo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-section" id="project">
+            <div class="project-section-text">
+                <h1 class="heading">Project</h1>
+                <h3 class="sub-heading">My Project</h3>
+            </div>
+            <div class="project-section-grid">
+                <div class="project-section-video">
+                    <video src="/src/video/netflix-demo.mov" loop autoplay muted>
+                    </video>
+                </div>
+                <div class="project-section-info">
+                    <h3>Netflix Clone</h3>
+                    <p>Develop a Netflix clone with <br> the help of React JS.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact">
+            <div class="about-section-text">
+                <h1 class="heading">Contact Me</h1>
+                <h3 class="sub-heading">Contact Info</h3>
+            </div>
+            <div class="contact-form">
+                <div class="contact-section-text">
+                    <h1>Let's talk</h1>
+                    <p>To request a quote or want to meet up for coffee, <br> contact us directly or fill out the form
+                        and we will <br> get back you promptly</p>
+                    <form>
+                        <div class="contact-form-name">
+                            <label>Your Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="contact-form-name">
+                            <label>Your Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="contact-form-message">
+                            <label>Your Message</label>
+                            <input type="text" placeholder="Type something if you want...">
+                        </div>
+                    </form>
+                    <button class="send-button">Send Message</button>
+                </div>
+                <div class="links-img">
+                    <img src="/src/image/contact.png" class="contact-img" alt="">
+                    <a href="#"><span class="material-symbols-outlined">home</span>
+                        Madhyamgram Vivekananda Nagar,Lane-1,Kolkata-700130
+                    </a>
+                    <a href="#"><span class="material-symbols-outlined">call</span>
+                        +91 9051306952</a>
+                    <a href="#"><span class="material-symbols-outlined">mail</span>
+                        sarkerparthiv@gmail.com
+                    </a>
+                    <div class="social">
+                        <a href="https://github.com/Parthiv-Sarker"><img src="/src/icon/github.png" alt="Github"></a>
+                        <a href="https://www.instagram.com/parthiv_sarker/"><img src="/src/icon/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-text">
+            <h1>PARTHIV SARKER</h1>
+            <h3 class="sub-heading">Frontend & Backend Develop</h3>
+        </div>
+        <div class="footer-link">
+            <ul class="footer-link-ul">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skill">Skill</a>
+                </li>
+                <li>
+                    <a href="#project">Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-link">
+            <a href="https://www.instagram.com/parthiv_sarker/"><img src="/src/icon/instagram.png" alt="instagram"></a>
+            <a href="https://github.com/Parthiv-Sarker"><img src="/src/icon/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="/src/icon/linkedin.png" alt="linkedin"></a>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+
+</html>
